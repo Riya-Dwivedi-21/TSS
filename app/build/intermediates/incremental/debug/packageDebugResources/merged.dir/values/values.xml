@@ -52,6 +52,7 @@
     <string name="emergency_contact_name">Emergency Contact Name</string>
     <string name="emergency_contact_phone">Emergency Contact Phone</string>
     <string name="emergency_contact_placeholder">Emergency Contact: John Doe (+91 98765 43210)</string>
+    <string name="enter_otp">Enter OTP</string>
     <string name="error_invalid_aadhaar">Please enter a valid 12-digit Aadhaar number</string>
     <string name="error_invalid_email">Please enter a valid email address</string>
     <string name="error_invalid_phone">Please enter a valid phone number</string>
@@ -84,6 +85,11 @@
     <string name="nationality">Nationality</string>
     <string name="nationality_placeholder">Nationality: Indian</string>
     <string name="next">Next</string>
+    <string name="otp_invalid">Invalid or expired OTP</string>
+    <string name="otp_resend_in">Resend in %1$ds</string>
+    <string name="otp_sent">OTP sent</string>
+    <string name="otp_sent_to">We have sent an OTP to %1$s</string>
+    <string name="otp_verification">OTP Verification</string>
     <string name="passport_number">Passport Number</string>
     <string name="personal_information">Personal Information</string>
     <string name="phone_number">Phone Number</string>
@@ -91,10 +97,12 @@
     <string name="qr_code">QR Code</string>
     <string name="qr_code_description">Scan this QR code to verify tourist identity and access safety information</string>
     <string name="qr_code_subtitle">Your digital identity for safety monitoring</string>
+    <string name="register_now">Register Tourist</string>
     <string name="register_tourist">Register Tourist</string>
     <string name="register_tourist_desc">Create a new tourist profile with safety monitoring</string>
     <string name="registration_subtitle">Please provide your details for safety monitoring</string>
     <string name="relationship">Relationship</string>
+    <string name="resend_otp">Resend OTP</string>
     <string name="safety_information">Safety Information</string>
     <string name="safety_score">Safety Score</string>
     <string name="safety_score_placeholder">Safety Score: 95/100</string>
@@ -116,6 +124,7 @@
     <string name="trip_purpose">Trip Purpose</string>
     <string name="view_qr_code">View QR Code</string>
     <string name="view_qr_code_desc">Display tourist ID and QR code for verification</string>
+    <string name="welcome_to_tss">Welcome to TSS</string>
     <style name="Theme.TouristSafetySystem" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/primary_color</item>

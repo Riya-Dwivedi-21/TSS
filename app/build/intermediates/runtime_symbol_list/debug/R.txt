@@ -3224,12 +3224,13 @@ int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
 int id btnCaptureFromCamera 0x7f080062
 int id btnDownload 0x7f080063
-int id btnExistingUser 0x7f080064
 int id btnLogin 0x7f080065
 int id btnNewUser 0x7f080066
 int id btnRegister 0x7f080067
+int id btnResend 0x7f080229
 int id btnReset 0x7f080068
 int id btnShare 0x7f080069
+int id btnVerify 0x7f08022a
 int id buttonPanel 0x7f08006a
 int id cache_measures 0x7f08006b
 int id callMeasure 0x7f08006c
@@ -3325,6 +3326,7 @@ int id etHotelName 0x7f0800c5
 int id etIdentifier 0x7f0800c6
 int id etName 0x7f0800c7
 int id etNewPassword 0x7f0800c8
+int id etOtp 0x7f08022b
 int id etPassword 0x7f0800c9
 int id etPhone 0x7f0800ca
 int id etTripPurpose 0x7f0800cb
@@ -3626,6 +3628,7 @@ int id tilHotelName 0x7f0801f2
 int id tilIdentifier 0x7f0801f3
 int id tilName 0x7f0801f4
 int id tilNewPassword 0x7f0801f5
+int id tilOtp 0x7f08022c
 int id tilPassword 0x7f0801f6
 int id tilPhone 0x7f0801f7
 int id tilTripPurpose 0x7f0801f8
@@ -3651,9 +3654,13 @@ int id tvEmergencyContact 0x7f08020b
 int id tvFooter 0x7f08020c
 int id tvForgotPassword 0x7f08020d
 int id tvNationality 0x7f08020e
+int id tvResendTimer 0x7f08022d
 int id tvSafetyScore 0x7f08020f
+int id tvSubtitle 0x7f08022e
+int id tvTitle 0x7f08022f
 int id tvTouristId 0x7f080210
 int id tvTouristName 0x7f080211
+int id tvWelcome 0x7f080230
 int id unchecked 0x7f080212
 int id uniform 0x7f080213
 int id unlabeled 0x7f080214
@@ -3794,6 +3801,7 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_choice 0x7f0b001c
 int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
+int layout activity_otp_verification 0x7f0b0073
 int layout activity_password_reset 0x7f0b001f
 int layout activity_qr_code 0x7f0b0020
 int layout activity_tourist_registration 0x7f0b0021
@@ -3947,6 +3955,7 @@ int string emergency_contact 0x7f0e0040
 int string emergency_contact_name 0x7f0e0041
 int string emergency_contact_phone 0x7f0e0042
 int string emergency_contact_placeholder 0x7f0e0043
+int string enter_otp 0x7f0e00fc
 int string error_a11y_label 0x7f0e0044
 int string error_icon_content_description 0x7f0e0045
 int string error_invalid_aadhaar 0x7f0e0046
@@ -4087,6 +4096,11 @@ int string mtrl_timepicker_confirm 0x7f0e00cc
 int string nationality 0x7f0e00cd
 int string nationality_placeholder 0x7f0e00ce
 int string next 0x7f0e00cf
+int string otp_invalid 0x7f0e00fd
+int string otp_resend_in 0x7f0e00fe
+int string otp_sent 0x7f0e00ff
+int string otp_sent_to 0x7f0e0100
+int string otp_verification 0x7f0e0101
 int string passport_number 0x7f0e00d0
 int string password_toggle_content_description 0x7f0e00d1
 int string path_password_eye 0x7f0e00d2
@@ -4099,10 +4113,12 @@ int string previous 0x7f0e00d8
 int string qr_code 0x7f0e00d9
 int string qr_code_description 0x7f0e00da
 int string qr_code_subtitle 0x7f0e00db
+int string register_now 0x7f0e0102
 int string register_tourist 0x7f0e00dc
 int string register_tourist_desc 0x7f0e00dd
 int string registration_subtitle 0x7f0e00de
 int string relationship 0x7f0e00df
+int string resend_otp 0x7f0e0103
 int string safety_information 0x7f0e00e0
 int string safety_score 0x7f0e00e1
 int string safety_score_placeholder 0x7f0e00e2
@@ -4131,6 +4147,7 @@ int string trip_information 0x7f0e00f8
 int string trip_purpose 0x7f0e00f9
 int string view_qr_code 0x7f0e00fa
 int string view_qr_code_desc 0x7f0e00fb
+int string welcome_to_tss 0x7f0e0104
 int style AlertDialog_AppCompat 0x7f0f0000
 int style AlertDialog_AppCompat_Light 0x7f0f0001
 int style Animation_AppCompat_Dialog 0x7f0f0002

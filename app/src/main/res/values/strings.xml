@@ -2,6 +2,7 @@
 <resources>
     <!-- App Information -->
     <string name="app_name">tss</string>
+    <string name="welcome_to_tss">Welcome to TSS</string>
     <string name="app_subtitle">Smart Tourist Safety Monitoring &amp; Incident Response</string>
     <string name="app_logo">App Logo</string>
     
@@ -66,6 +67,15 @@
     <string name="confirm">Confirm</string>
     <string name="back">Back</string>
     <string name="next">Next</string>
+    <!-- OTP Verification -->
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp_sent_to">We have sent an OTP to %1$s</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="register_now">Register Tourist</string>
+    <string name="otp_invalid">Invalid or expired OTP</string>
+    <string name="otp_sent">OTP sent</string>
+    <string name="otp_resend_in">Resend in %1$ds</string>
     <string name="previous">Previous</string>
     
     <!-- Dialog Messages -->

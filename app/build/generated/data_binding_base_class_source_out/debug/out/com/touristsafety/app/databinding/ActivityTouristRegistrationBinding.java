@@ -31,9 +31,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
   public final MaterialButton btnRegister;
 
   @NonNull
-  public final TextInputEditText etConfirmPassword;
-
-  @NonNull
   public final TextInputEditText etDocNumber;
 
   @NonNull
@@ -58,9 +55,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
   public final TextInputEditText etName;
 
   @NonNull
-  public final TextInputEditText etPassword;
-
-  @NonNull
   public final TextInputEditText etPhone;
 
   @NonNull
@@ -77,9 +71,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
 
   @NonNull
   public final Spinner spinnerNationality;
-
-  @NonNull
-  public final TextInputLayout tilConfirmPassword;
 
   @NonNull
   public final TextInputLayout tilDocNumber;
@@ -106,9 +97,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
   public final TextInputLayout tilName;
 
   @NonNull
-  public final TextInputLayout tilPassword;
-
-  @NonNull
   public final TextInputLayout tilPhone;
 
   @NonNull
@@ -116,24 +104,21 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
 
   private ActivityTouristRegistrationBinding(@NonNull ScrollView rootView,
       @NonNull MaterialButton btnCaptureFromCamera, @NonNull MaterialButton btnRegister,
-      @NonNull TextInputEditText etConfirmPassword, @NonNull TextInputEditText etDocNumber,
-      @NonNull TextInputEditText etEmail, @NonNull TextInputEditText etEmergencyName,
-      @NonNull TextInputEditText etEmergencyPhone, @NonNull TextInputEditText etEmergencyRelation,
-      @NonNull TextInputEditText etHotelAddress, @NonNull TextInputEditText etHotelName,
-      @NonNull TextInputEditText etName, @NonNull TextInputEditText etPassword,
+      @NonNull TextInputEditText etDocNumber, @NonNull TextInputEditText etEmail,
+      @NonNull TextInputEditText etEmergencyName, @NonNull TextInputEditText etEmergencyPhone,
+      @NonNull TextInputEditText etEmergencyRelation, @NonNull TextInputEditText etHotelAddress,
+      @NonNull TextInputEditText etHotelName, @NonNull TextInputEditText etName,
       @NonNull TextInputEditText etPhone, @NonNull TextInputEditText etTripPurpose,
       @NonNull ImageView ivProfilePhoto, @NonNull ProgressBar progressBar,
       @NonNull Spinner spinnerDocType, @NonNull Spinner spinnerNationality,
-      @NonNull TextInputLayout tilConfirmPassword, @NonNull TextInputLayout tilDocNumber,
-      @NonNull TextInputLayout tilEmail, @NonNull TextInputLayout tilEmergencyName,
-      @NonNull TextInputLayout tilEmergencyPhone, @NonNull TextInputLayout tilEmergencyRelation,
-      @NonNull TextInputLayout tilHotelAddress, @NonNull TextInputLayout tilHotelName,
-      @NonNull TextInputLayout tilName, @NonNull TextInputLayout tilPassword,
+      @NonNull TextInputLayout tilDocNumber, @NonNull TextInputLayout tilEmail,
+      @NonNull TextInputLayout tilEmergencyName, @NonNull TextInputLayout tilEmergencyPhone,
+      @NonNull TextInputLayout tilEmergencyRelation, @NonNull TextInputLayout tilHotelAddress,
+      @NonNull TextInputLayout tilHotelName, @NonNull TextInputLayout tilName,
       @NonNull TextInputLayout tilPhone, @NonNull TextInputLayout tilTripPurpose) {
     this.rootView = rootView;
     this.btnCaptureFromCamera = btnCaptureFromCamera;
     this.btnRegister = btnRegister;
-    this.etConfirmPassword = etConfirmPassword;
     this.etDocNumber = etDocNumber;
     this.etEmail = etEmail;
     this.etEmergencyName = etEmergencyName;
@@ -142,14 +127,12 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
     this.etHotelAddress = etHotelAddress;
     this.etHotelName = etHotelName;
     this.etName = etName;
-    this.etPassword = etPassword;
     this.etPhone = etPhone;
     this.etTripPurpose = etTripPurpose;
     this.ivProfilePhoto = ivProfilePhoto;
     this.progressBar = progressBar;
     this.spinnerDocType = spinnerDocType;
     this.spinnerNationality = spinnerNationality;
-    this.tilConfirmPassword = tilConfirmPassword;
     this.tilDocNumber = tilDocNumber;
     this.tilEmail = tilEmail;
     this.tilEmergencyName = tilEmergencyName;
@@ -158,7 +141,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
     this.tilHotelAddress = tilHotelAddress;
     this.tilHotelName = tilHotelName;
     this.tilName = tilName;
-    this.tilPassword = tilPassword;
     this.tilPhone = tilPhone;
     this.tilTripPurpose = tilTripPurpose;
   }
@@ -199,12 +181,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
       id = R.id.btnRegister;
       MaterialButton btnRegister = ViewBindings.findChildViewById(rootView, id);
       if (btnRegister == null) {
-        break missingId;
-      }
-
-      id = R.id.etConfirmPassword;
-      TextInputEditText etConfirmPassword = ViewBindings.findChildViewById(rootView, id);
-      if (etConfirmPassword == null) {
         break missingId;
       }
 
@@ -256,12 +232,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.etPassword;
-      TextInputEditText etPassword = ViewBindings.findChildViewById(rootView, id);
-      if (etPassword == null) {
-        break missingId;
-      }
-
       id = R.id.etPhone;
       TextInputEditText etPhone = ViewBindings.findChildViewById(rootView, id);
       if (etPhone == null) {
@@ -295,12 +265,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
       id = R.id.spinnerNationality;
       Spinner spinnerNationality = ViewBindings.findChildViewById(rootView, id);
       if (spinnerNationality == null) {
-        break missingId;
-      }
-
-      id = R.id.tilConfirmPassword;
-      TextInputLayout tilConfirmPassword = ViewBindings.findChildViewById(rootView, id);
-      if (tilConfirmPassword == null) {
         break missingId;
       }
 
@@ -352,12 +316,6 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tilPassword;
-      TextInputLayout tilPassword = ViewBindings.findChildViewById(rootView, id);
-      if (tilPassword == null) {
-        break missingId;
-      }
-
       id = R.id.tilPhone;
       TextInputLayout tilPhone = ViewBindings.findChildViewById(rootView, id);
       if (tilPhone == null) {
@@ -371,11 +329,10 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
       }
 
       return new ActivityTouristRegistrationBinding((ScrollView) rootView, btnCaptureFromCamera,
-          btnRegister, etConfirmPassword, etDocNumber, etEmail, etEmergencyName, etEmergencyPhone,
-          etEmergencyRelation, etHotelAddress, etHotelName, etName, etPassword, etPhone,
-          etTripPurpose, ivProfilePhoto, progressBar, spinnerDocType, spinnerNationality,
-          tilConfirmPassword, tilDocNumber, tilEmail, tilEmergencyName, tilEmergencyPhone,
-          tilEmergencyRelation, tilHotelAddress, tilHotelName, tilName, tilPassword, tilPhone,
+          btnRegister, etDocNumber, etEmail, etEmergencyName, etEmergencyPhone, etEmergencyRelation,
+          etHotelAddress, etHotelName, etName, etPhone, etTripPurpose, ivProfilePhoto, progressBar,
+          spinnerDocType, spinnerNationality, tilDocNumber, tilEmail, tilEmergencyName,
+          tilEmergencyPhone, tilEmergencyRelation, tilHotelAddress, tilHotelName, tilName, tilPhone,
           tilTripPurpose);
     }
     String missingId = rootView.getResources().getResourceName(id);

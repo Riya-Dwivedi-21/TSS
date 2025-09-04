@@ -25,8 +25,7 @@ class QRCodeActivity : AppCompatActivity() {
         binding = ActivityQrCodeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.root.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.fade_in))
-        overridePendingTransition(R.anim.slide_up, R.anim.fade_in)
-        
+
         setupTouristData()
         generateQRCode()
         setupClickListeners()
@@ -63,7 +62,7 @@ class QRCodeActivity : AppCompatActivity() {
             val hotelName = intent.getStringExtra("hotel_name") ?: ""
             val hotelAddress = intent.getStringExtra("hotel_address") ?: ""
             val tripPurpose = intent.getStringExtra("trip_purpose") ?: ""
-            
+
             // Generate QR code with comprehensive tourist information
             val touristData = """
                 TOURIST SAFETY SYSTEM - DIGITAL ID

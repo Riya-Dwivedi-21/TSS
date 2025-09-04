@@ -3225,12 +3225,13 @@ id bounceEnd
 id bounceStart
 id btnCaptureFromCamera
 id btnDownload
-id btnExistingUser
 id btnLogin
 id btnNewUser
 id btnRegister
+id btnResend
 id btnReset
 id btnShare
+id btnVerify
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3326,6 +3327,7 @@ id etHotelName
 id etIdentifier
 id etName
 id etNewPassword
+id etOtp
 id etPassword
 id etPhone
 id etTripPurpose
@@ -3627,6 +3629,7 @@ id tilHotelName
 id tilIdentifier
 id tilName
 id tilNewPassword
+id tilOtp
 id tilPassword
 id tilPhone
 id tilTripPurpose
@@ -3652,9 +3655,13 @@ id tvEmergencyContact
 id tvFooter
 id tvForgotPassword
 id tvNationality
+id tvResendTimer
 id tvSafetyScore
+id tvSubtitle
+id tvTitle
 id tvTouristId
 id tvTouristName
+id tvWelcome
 id unchecked
 id uniform
 id unlabeled
@@ -3795,6 +3802,7 @@ layout abc_tooltip
 layout activity_choice
 layout activity_login
 layout activity_main
+layout activity_otp_verification
 layout activity_password_reset
 layout activity_qr_code
 layout activity_tourist_registration
@@ -3948,6 +3956,7 @@ string emergency_contact
 string emergency_contact_name
 string emergency_contact_phone
 string emergency_contact_placeholder
+string enter_otp
 string error_a11y_label
 string error_icon_content_description
 string error_invalid_aadhaar
@@ -4088,6 +4097,11 @@ string mtrl_timepicker_confirm
 string nationality
 string nationality_placeholder
 string next
+string otp_invalid
+string otp_resend_in
+string otp_sent
+string otp_sent_to
+string otp_verification
 string passport_number
 string password_toggle_content_description
 string path_password_eye
@@ -4100,10 +4114,12 @@ string previous
 string qr_code
 string qr_code_description
 string qr_code_subtitle
+string register_now
 string register_tourist
 string register_tourist_desc
 string registration_subtitle
 string relationship
+string resend_otp
 string safety_information
 string safety_score
 string safety_score_placeholder
@@ -4132,6 +4148,7 @@ string trip_information
 string trip_purpose
 string view_qr_code
 string view_qr_code_desc
+string welcome_to_tss
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
