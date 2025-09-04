@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Information -->
+    <string name="app_name">tss</string>
+    <string name="app_subtitle">Smart Tourist Safety Monitoring &amp; Incident Response</string>
+    <string name="app_logo">App Logo</string>
+    
+    <!-- Main Activity -->
+    <string name="register_tourist">Register Tourist</string>
+    <string name="register_tourist_desc">Create a new tourist profile with safety monitoring</string>
+    <string name="view_qr_code">View QR Code</string>
+    <string name="view_qr_code_desc">Display tourist ID and QR code for verification</string>
+    <string name="footer_text">© 2024 Tourist Safety System. All rights reserved.</string>
+    
+    <!-- Tourist Registration -->
+    <string name="tourist_registration">Tourist Registration</string>
+    <string name="registration_subtitle">Please provide your details for safety monitoring</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="aadhaar_number">Aadhaar Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="nationality">Nationality</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="emergency_contact_name">Emergency Contact Name</string>
+    <string name="emergency_contact_phone">Emergency Contact Phone</string>
+    <string name="relationship">Relationship</string>
+    <string name="trip_information">Trip Information</string>
+    <string name="hotel_name">Hotel Name</string>
+    <string name="hotel_address">Hotel Address</string>
+    <string name="trip_purpose">Trip Purpose</string>
+    
+    <!-- QR Code Activity -->
+    <string name="tourist_id_card">Tourist ID Card</string>
+    <string name="qr_code_subtitle">Your digital identity for safety monitoring</string>
+    <string name="tourist_information">Tourist Information</string>
+    <string name="tourist_photo">Tourist Photo</string>
+    <string name="tourist_name_placeholder">Tourist Name</string>
+    <string name="tourist_id_placeholder">Tourist ID: TOURIST_123456</string>
+    <string name="nationality_placeholder">Nationality: Indian</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="qr_code_description">Scan this QR code to verify tourist identity and access safety information</string>
+    <string name="safety_information">Safety Information</string>
+    <string name="safety_score">Safety Score</string>
+    <string name="safety_score_placeholder">Safety Score: 95/100</string>
+    <string name="emergency_contact_placeholder">Emergency Contact: John Doe (+91 98765 43210)</string>
+    <string name="share_id">Share ID</string>
+    <string name="download_id">Download ID</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_required_field">This field is required</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_invalid_phone">Please enter a valid phone number</string>
+    <string name="error_invalid_aadhaar">Please enter a valid 12-digit Aadhaar number</string>
+    <string name="error_registration_failed">Registration failed. Please try again.</string>
+    <string name="success_registration">Tourist registered successfully!</string>
+    
+    <!-- Button Text -->
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    
+    <!-- Dialog Messages -->
+    <string name="dialog_title_success">Success</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="dialog_title_warning">Warning</string>
+    <string name="dialog_title_info">Information</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    
+    <!-- Loading Messages -->
+    <string name="loading_registering">Registering tourist...</string>
+    <string name="loading_generating_qr">Generating QR code...</string>
+    <string name="loading_saving">Saving...</string>
+    <string name="loading_updating">Updating...</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_unknown">An unknown error occurred. Please try again.</string>
+    <string name="error_timeout">Request timeout. Please try again.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_qr_generated">QR code generated successfully!</string>
+    <string name="success_id_shared">Tourist ID shared successfully!</string>
+    <string name="success_id_downloaded">Tourist ID downloaded successfully!</string>
+    
+    <!-- Placeholder Text -->
+    <string name="hint_enter_name">Enter your full name</string>
+    <string name="hint_enter_passport">Enter passport number</string>
+    <string name="hint_enter_aadhaar">Enter 12-digit Aadhaar number</string>
+    <string name="hint_enter_phone">Enter phone number</string>
+    <string name="hint_enter_email">Enter email address</string>
+    <string name="hint_enter_nationality">Enter your nationality</string>
+    <string name="hint_enter_emergency_name">Enter emergency contact name</string>
+    <string name="hint_enter_emergency_phone">Enter emergency contact phone</string>
+    <string name="hint_enter_relationship">Enter relationship</string>
+    <string name="hint_enter_hotel">Enter hotel name</string>
+    <string name="hint_enter_address">Enter hotel address</string>
+    <string name="hint_enter_purpose">Enter trip purpose</string>
+</resources>
