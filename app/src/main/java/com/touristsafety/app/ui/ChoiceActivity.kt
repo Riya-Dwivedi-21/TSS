@@ -7,24 +7,22 @@ import com.touristsafety.app.databinding.ActivityChoiceBinding
 import com.touristsafety.app.R
 
 class ChoiceActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityChoiceBinding
+	private lateinit var binding: ActivityChoiceBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityChoiceBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        // animate buttons on entry
-        val anim = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up)
-        binding.btnExistingUser.startAnimation(anim)
-        binding.btnNewUser.startAnimation(anim)
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		binding = ActivityChoiceBinding.inflate(layoutInflater)
+		setContentView(binding.root)
+		// animate views on entry
+		val animUp = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up)
+		val animFade = android.view.animation.AnimationUtils.loadAnimation(this, R.anim.fade_in)
+		binding.tvWelcome.startAnimation(animFade)
+		binding.btnNewUser.startAnimation(animUp)
 
-        binding.btnExistingUser.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
-        binding.btnNewUser.setOnClickListener {
-            startActivity(Intent(this, TouristRegistrationActivity::class.java))
-        }
-    }
+		binding.btnNewUser.setOnClickListener {
+			startActivity(Intent(this, TouristRegistrationActivity::class.java))
+		}
+	}
 }
 
 

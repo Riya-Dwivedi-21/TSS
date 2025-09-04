@@ -38,7 +38,7 @@ class TouristRegistrationActivity : AppCompatActivity() {
     
     private fun setupClickListeners() {
         binding.btnRegister.setOnClickListener {
-            registerTourist()
+            proceedToOtpVerification()
         }
         // Photo capture trigger (camera only)
         binding.ivProfilePhoto.setOnClickListener { openCamera() }
@@ -54,12 +54,6 @@ class TouristRegistrationActivity : AppCompatActivity() {
                 is TouristRegistrationViewModel.RegistrationState.Success -> {
                     showLoading(false)
                     showSuccessMessage()
-                    // Demo: register identifier to password into memory store
-                    val identifier = binding.etEmail.text.toString().ifBlank { binding.etPhone.text.toString() }
-                    val password = "Password@123" // In a real app, collect a password field
-                    if (identifier.isNotBlank()) {
-                        InMemoryAuthStore.register(identifier, password)
-                    }
                     navigateToQRCode()
                 }
                 is TouristRegistrationViewModel.RegistrationState.Error -> {
@@ -75,13 +69,11 @@ class TouristRegistrationActivity : AppCompatActivity() {
         }
     }
     
-    private fun registerTourist() {
+    private fun proceedToOtpVerification() {
         val name = binding.etName.text.toString().trim()
         // Removed dedicated passport/aadhaar fields; using verification type + number below
         val phoneNumber = binding.etPhone.text.toString().trim()
         val email = binding.etEmail.text.toString().trim()
-        val password = binding.etPassword.text.toString().trim()
-        val confirmPassword = binding.etConfirmPassword.text.toString().trim()
         val emergencyContactName = binding.etEmergencyName.text.toString().trim()
         val emergencyContactPhone = binding.etEmergencyPhone.text.toString().trim()
         val emergencyContactRelation = binding.etEmergencyRelation.text.toString().trim()
@@ -91,14 +83,6 @@ class TouristRegistrationActivity : AppCompatActivity() {
         // Minimal validations
         if (!hasProfilePhoto && binding.ivProfilePhoto.drawable == null) {
             showErrorMessage("Please add a profile photo")
-            return
-        }
-        if (password.length < 8 || !password.any { it.isDigit() } || !password.any { it.isUpperCase() }) {
-            showErrorMessage("Password must be 8+ chars with uppercase and number")
-            return
-        }
-        if (password != confirmPassword) {
-            showErrorMessage("Passwords do not match")
             return
         }
         if (nationality.isEmpty()) {
@@ -124,21 +108,23 @@ class TouristRegistrationActivity : AppCompatActivity() {
         val hotelName = binding.etHotelName.text.toString().trim()
         val hotelAddress = binding.etHotelAddress.text.toString().trim()
         val tripPurpose = binding.etTripPurpose.text.toString().trim()
-        
-        viewModel.registerTourist(
-            name = name,
-            verificationType = docType,
-            verificationNumber = docNumber,
-            phoneNumber = phoneNumber,
-            email = email,
-            emergencyContactName = emergencyContactName,
-            emergencyContactPhone = emergencyContactPhone,
-            emergencyContactRelation = emergencyContactRelation,
-            nationality = nationality,
-            hotelName = hotelName,
-            hotelAddress = hotelAddress,
-            tripPurpose = tripPurpose
-        )
+
+        val intent = Intent(this, OtpVerificationActivity::class.java).apply {
+            putExtra("name", name)
+            putExtra("phoneNumber", phoneNumber)
+            putExtra("email", email)
+            putExtra("emergencyContactName", emergencyContactName)
+            putExtra("emergencyContactPhone", emergencyContactPhone)
+            putExtra("emergencyContactRelation", emergencyContactRelation)
+            putExtra("nationality", nationality)
+            putExtra("docType", docType)
+            putExtra("docNumber", docNumber)
+            putExtra("hotelName", hotelName)
+            putExtra("hotelAddress", hotelAddress)
+            putExtra("tripPurpose", tripPurpose)
+        }
+        startActivity(intent)
+        overridePendingTransition(R.anim.slide_up, R.anim.fade_in)
     }
 
     override fun onStart() {

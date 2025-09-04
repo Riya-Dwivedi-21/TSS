@@ -1,34 +1,42 @@
 [
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_login.xml",
-        "source": "com.touristsafety.app-main-40:/layout/activity_login.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_qr_code.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_qr_code.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_main.xml",
-        "source": "com.touristsafety.app-main-40:/layout/activity_main.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_password_reset.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_password_reset.xml"
+    },
+    {
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_choice.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_choice.xml"
+    },
+    {
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_main.xml"
     },
     {
         "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_choice.xml",
         "source": "com.touristsafety.app-main-40:/layout/activity_choice.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_tourist_registration.xml",
-        "source": "com.touristsafety.app-main-40:/layout/activity_tourist_registration.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_otp_verification.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_otp_verification.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_qr_code.xml",
-        "source": "com.touristsafety.app-main-40:/layout/activity_qr_code.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_tourist_registration.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_tourist_registration.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/spinner_item.xml",
-        "source": "com.touristsafety.app-main-40:/layout/spinner_item.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\spinner_item.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/activity_password_reset.xml",
-        "source": "com.touristsafety.app-main-40:/layout/activity_password_reset.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.touristsafety.app-mergeDebugResources-37:/layout/spinner_dropdown_item.xml",
-        "source": "com.touristsafety.app-main-40:/layout/spinner_dropdown_item.xml"
+        "merged": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-mergeDebugResources-37:\\layout\\spinner_dropdown_item.xml",
+        "source": "C:\\Users\\micro\\.gradle\\daemon\\8.2\\com.touristsafety.app-main-40:\\layout\\spinner_dropdown_item.xml"
     }
 ]

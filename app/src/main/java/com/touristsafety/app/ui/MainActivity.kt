@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.touristsafety.app.databinding.ActivityMainBinding
-import com.touristsafety.app.R
 
 class MainActivity : AppCompatActivity() {
     
@@ -70,7 +69,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun proceedToApp() {
         startActivity(Intent(this, ChoiceActivity::class.java))
-        overridePendingTransition(R.anim.slide_up, R.anim.fade_in)
         finish()
     }
 }
