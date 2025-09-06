@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.touristsafety.app.R
 import com.touristsafety.app.databinding.ActivityOtpVerificationBinding
 import com.touristsafety.app.ui.viewmodel.TouristRegistrationViewModel
+import com.touristsafety.app.ui.viewmodel.ViewModelFactory
 
 class OtpVerificationActivity : AppCompatActivity() {
 
@@ -30,7 +31,7 @@ class OtpVerificationActivity : AppCompatActivity() {
         binding = ActivityOtpVerificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel = ViewModelProvider(this)[TouristRegistrationViewModel::class.java]
+        viewModel = ViewModelProvider(this, ViewModelFactory(this))[TouristRegistrationViewModel::class.java]
 
         val phone = intent.getStringExtra("phoneNumber").orEmpty()
         binding.tvSubtitle.text = getString(R.string.otp_sent_to, phone)
@@ -62,8 +63,9 @@ class OtpVerificationActivity : AppCompatActivity() {
                 is TouristRegistrationViewModel.RegistrationState.Loading -> binding.progressBar.visibility = View.VISIBLE
                 is TouristRegistrationViewModel.RegistrationState.Success -> {
                     binding.progressBar.visibility = View.GONE
-                    // Proceed to QR page
-                    val intent = android.content.Intent(this, QRCodeActivity::class.java).apply {
+                    // Proceed to MainActivity with bottom navigation
+                    val intent = android.content.Intent(this, MainActivity::class.java).apply {
+                        addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK)
                         putExtra("tourist_name", intent.getStringExtra("name"))
                         putExtra("tourist_id", viewModel.touristId.value ?: "TOURIST_${System.currentTimeMillis()}")
                         putExtra("nationality", intent.getStringExtra("nationality"))
@@ -76,6 +78,7 @@ class OtpVerificationActivity : AppCompatActivity() {
                         putExtra("hotel_name", intent.getStringExtra("hotelName"))
                         putExtra("hotel_address", intent.getStringExtra("hotelAddress"))
                         putExtra("trip_purpose", intent.getStringExtra("tripPurpose"))
+                        putExtra("trip_days", intent.getIntExtra("tripDays", 1))
                     }
                     startActivity(intent)
                     overridePendingTransition(R.anim.slide_up, R.anim.fade_in)
@@ -102,6 +105,7 @@ class OtpVerificationActivity : AppCompatActivity() {
         val hotelName = intent.getStringExtra("hotelName").orEmpty()
         val hotelAddress = intent.getStringExtra("hotelAddress").orEmpty()
         val tripPurpose = intent.getStringExtra("tripPurpose").orEmpty()
+        val tripDays = intent.getIntExtra("tripDays", 1)
 
         viewModel.registerTourist(
             name = name,
@@ -115,7 +119,8 @@ class OtpVerificationActivity : AppCompatActivity() {
             nationality = nationality,
             hotelName = hotelName,
             hotelAddress = hotelAddress,
-            tripPurpose = tripPurpose
+            tripPurpose = tripPurpose,
+            tripDays = tripDays
         )
     }
 

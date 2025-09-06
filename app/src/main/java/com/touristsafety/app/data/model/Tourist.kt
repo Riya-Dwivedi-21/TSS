@@ -22,6 +22,7 @@ data class Tourist(
     val hotelName: String = "",
     val hotelAddress: String = "",
     val tripPurpose: String = "",
+    val tripDays: Int = 1,
     val safetyScore: Int = 100,
     val isActive: Boolean = true,
     val createdAt: Date = Date(),

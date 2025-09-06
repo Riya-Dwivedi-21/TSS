@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.touristsafety.app.databinding.ActivityTouristRegistrationBinding
 import com.touristsafety.app.R
 import com.touristsafety.app.ui.viewmodel.TouristRegistrationViewModel
+import com.touristsafety.app.ui.viewmodel.ViewModelFactory
 
 class TouristRegistrationActivity : AppCompatActivity() {
     
@@ -33,7 +34,7 @@ class TouristRegistrationActivity : AppCompatActivity() {
     }
     
     private fun setupViewModel() {
-        viewModel = ViewModelProvider(this)[TouristRegistrationViewModel::class.java]
+        viewModel = ViewModelProvider(this, ViewModelFactory(this))[TouristRegistrationViewModel::class.java]
     }
     
     private fun setupClickListeners() {
@@ -108,6 +109,7 @@ class TouristRegistrationActivity : AppCompatActivity() {
         val hotelName = binding.etHotelName.text.toString().trim()
         val hotelAddress = binding.etHotelAddress.text.toString().trim()
         val tripPurpose = binding.etTripPurpose.text.toString().trim()
+        val tripDays = binding.etTripDays.text.toString().trim().toIntOrNull() ?: 1
 
         val intent = Intent(this, OtpVerificationActivity::class.java).apply {
             putExtra("name", name)
@@ -122,6 +124,7 @@ class TouristRegistrationActivity : AppCompatActivity() {
             putExtra("hotelName", hotelName)
             putExtra("hotelAddress", hotelAddress)
             putExtra("tripPurpose", tripPurpose)
+            putExtra("tripDays", tripDays)
         }
         startActivity(intent)
         overridePendingTransition(R.anim.slide_up, R.anim.fade_in)
@@ -218,6 +221,7 @@ class TouristRegistrationActivity : AppCompatActivity() {
             putExtra("hotel_name", binding.etHotelName.text.toString().trim())
             putExtra("hotel_address", binding.etHotelAddress.text.toString().trim())
             putExtra("trip_purpose", binding.etTripPurpose.text.toString().trim())
+            putExtra("trip_days", binding.etTripDays.text.toString().trim().toIntOrNull() ?: 1)
         }
         startActivity(intent)
         overridePendingTransition(R.anim.slide_up, R.anim.fade_in)

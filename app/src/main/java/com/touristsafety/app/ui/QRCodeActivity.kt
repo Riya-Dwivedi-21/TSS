@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
@@ -24,11 +25,14 @@ class QRCodeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityQrCodeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.root.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.fade_in))
+        
+        // Start with enhanced entrance animation
+        binding.root.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up))
 
         setupTouristData()
         generateQRCode()
         setupClickListeners()
+        startAnimations()
     }
     
     private fun setupTouristData() {
@@ -115,6 +119,10 @@ class QRCodeActivity : AppCompatActivity() {
     }
     
     private fun setupClickListeners() {
+        binding.btnContinueToApp.setOnClickListener {
+            navigateToMainApp()
+        }
+        
         binding.btnShare.setOnClickListener {
             shareTouristID()
         }
@@ -122,6 +130,14 @@ class QRCodeActivity : AppCompatActivity() {
         binding.btnDownload.setOnClickListener {
             downloadTouristID()
         }
+    }
+    
+    private fun navigateToMainApp() {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        startActivity(intent)
+        finish()
     }
     
     private fun shareTouristID() {
@@ -166,6 +182,67 @@ class QRCodeActivity : AppCompatActivity() {
         } catch (e: Exception) {
             Toast.makeText(this, "Failed to save QR", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun startAnimations() {
+        // Animate QR code with rotation
+        binding.ivQRCode.alpha = 0f
+        binding.ivQRCode.rotation = -90f
+        binding.ivQRCode.animate()
+            .alpha(1f)
+            .rotation(0f)
+            .setDuration(800)
+            .setStartDelay(200)
+            .setInterpolator(android.view.animation.DecelerateInterpolator())
+            .start()
+        
+        // Animate tourist info with slide in from left
+        val infoViews = listOf(
+            binding.tvTouristName,
+            binding.tvTouristId,
+            binding.tvNationality,
+            binding.tvSafetyScore,
+            binding.tvEmergencyContact
+        )
+        
+        infoViews.forEachIndexed { index, view ->
+            view.alpha = 0f
+            view.translationX = -100f
+            view.animate()
+                .alpha(1f)
+                .translationX(0f)
+                .setDuration(500)
+                .setStartDelay((index * 100 + 400).toLong())
+                .start()
+        }
+        
+        // Animate buttons with staggered entrance
+        binding.btnContinueToApp.alpha = 0f
+        binding.btnContinueToApp.translationY = 50f
+        binding.btnContinueToApp.animate()
+            .alpha(1f)
+            .translationY(0f)
+            .setDuration(500)
+            .setStartDelay(800)
+            .start()
+        
+        binding.btnShare.alpha = 0f
+        binding.btnShare.translationY = 50f
+        binding.btnShare.animate()
+            .alpha(1f)
+            .translationY(0f)
+            .setDuration(500)
+            .setStartDelay(900)
+            .start()
+        
+        binding.btnDownload.alpha = 0f
+        binding.btnDownload.translationY = 50f
+        binding.btnDownload.animate()
+            .alpha(1f)
+            .translationY(0f)
+            .setDuration(500)
+            .setStartDelay(1000)
+            .start()
     }
 
     override fun finish() {

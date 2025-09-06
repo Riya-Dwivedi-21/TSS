@@ -284,31 +284,54 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
+            <!-- Primary Action Button -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnShare"
-                android:layout_width="0dp"
+                android:id="@+id/btnContinueToApp"
+                android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:text="@string/share_id"
+                android:layout_marginBottom="16dp"
+                android:text="Continue to App"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:cornerRadius="28dp"
-                app:icon="@drawable/ic_share"
-                app:iconGravity="textStart" />
+                app:icon="@drawable/ic_arrow_forward"
+                app:iconGravity="textEnd" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnDownload"
-                android:layout_width="0dp"
-                android:layout_height="56dp"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:text="@string/download_id"
-                android:textSize="16sp"
-                app:cornerRadius="28dp"
-                app:icon="@drawable/ic_download"
-                app:iconGravity="textStart" />
+            <!-- Secondary Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/share_id"
+                    android:textSize="14sp"
+                    app:cornerRadius="24dp"
+                    app:icon="@drawable/ic_share"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDownload"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/download_id"
+                    android:textSize="14sp"
+                    app:cornerRadius="24dp"
+                    app:icon="@drawable/ic_download"
+                    app:iconGravity="textStart"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

@@ -4,14 +4,13 @@ package com.touristsafety.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.touristsafety.app.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,34 +21,17 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final MaterialCardView cardRegister;
+  public final BottomNavigationView bottomNavigation;
 
   @NonNull
-  public final MaterialCardView cardViewQR;
-
-  @NonNull
-  public final ImageView ivLogo;
-
-  @NonNull
-  public final TextView tvAppSubtitle;
-
-  @NonNull
-  public final TextView tvAppTitle;
-
-  @NonNull
-  public final TextView tvFooter;
+  public final FragmentContainerView navHostFragment;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialCardView cardRegister, @NonNull MaterialCardView cardViewQR,
-      @NonNull ImageView ivLogo, @NonNull TextView tvAppSubtitle, @NonNull TextView tvAppTitle,
-      @NonNull TextView tvFooter) {
+      @NonNull BottomNavigationView bottomNavigation,
+      @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
-    this.cardRegister = cardRegister;
-    this.cardViewQR = cardViewQR;
-    this.ivLogo = ivLogo;
-    this.tvAppSubtitle = tvAppSubtitle;
-    this.tvAppTitle = tvAppTitle;
-    this.tvFooter = tvFooter;
+    this.bottomNavigation = bottomNavigation;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
@@ -79,44 +61,20 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cardRegister;
-      MaterialCardView cardRegister = ViewBindings.findChildViewById(rootView, id);
-      if (cardRegister == null) {
+      id = R.id.bottom_navigation;
+      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigation == null) {
         break missingId;
       }
 
-      id = R.id.cardViewQR;
-      MaterialCardView cardViewQR = ViewBindings.findChildViewById(rootView, id);
-      if (cardViewQR == null) {
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
         break missingId;
       }
 
-      id = R.id.ivLogo;
-      ImageView ivLogo = ViewBindings.findChildViewById(rootView, id);
-      if (ivLogo == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAppSubtitle;
-      TextView tvAppSubtitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvAppSubtitle == null) {
-        break missingId;
-      }
-
-      id = R.id.tvAppTitle;
-      TextView tvAppTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvAppTitle == null) {
-        break missingId;
-      }
-
-      id = R.id.tvFooter;
-      TextView tvFooter = ViewBindings.findChildViewById(rootView, id);
-      if (tvFooter == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, cardRegister, cardViewQR, ivLogo,
-          tvAppSubtitle, tvAppTitle, tvFooter);
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation,
+          navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -58,6 +58,9 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
   public final TextInputEditText etPhone;
 
   @NonNull
+  public final TextInputEditText etTripDays;
+
+  @NonNull
   public final TextInputEditText etTripPurpose;
 
   @NonNull
@@ -100,6 +103,9 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
   public final TextInputLayout tilPhone;
 
   @NonNull
+  public final TextInputLayout tilTripDays;
+
+  @NonNull
   public final TextInputLayout tilTripPurpose;
 
   private ActivityTouristRegistrationBinding(@NonNull ScrollView rootView,
@@ -108,14 +114,15 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
       @NonNull TextInputEditText etEmergencyName, @NonNull TextInputEditText etEmergencyPhone,
       @NonNull TextInputEditText etEmergencyRelation, @NonNull TextInputEditText etHotelAddress,
       @NonNull TextInputEditText etHotelName, @NonNull TextInputEditText etName,
-      @NonNull TextInputEditText etPhone, @NonNull TextInputEditText etTripPurpose,
-      @NonNull ImageView ivProfilePhoto, @NonNull ProgressBar progressBar,
-      @NonNull Spinner spinnerDocType, @NonNull Spinner spinnerNationality,
-      @NonNull TextInputLayout tilDocNumber, @NonNull TextInputLayout tilEmail,
-      @NonNull TextInputLayout tilEmergencyName, @NonNull TextInputLayout tilEmergencyPhone,
-      @NonNull TextInputLayout tilEmergencyRelation, @NonNull TextInputLayout tilHotelAddress,
-      @NonNull TextInputLayout tilHotelName, @NonNull TextInputLayout tilName,
-      @NonNull TextInputLayout tilPhone, @NonNull TextInputLayout tilTripPurpose) {
+      @NonNull TextInputEditText etPhone, @NonNull TextInputEditText etTripDays,
+      @NonNull TextInputEditText etTripPurpose, @NonNull ImageView ivProfilePhoto,
+      @NonNull ProgressBar progressBar, @NonNull Spinner spinnerDocType,
+      @NonNull Spinner spinnerNationality, @NonNull TextInputLayout tilDocNumber,
+      @NonNull TextInputLayout tilEmail, @NonNull TextInputLayout tilEmergencyName,
+      @NonNull TextInputLayout tilEmergencyPhone, @NonNull TextInputLayout tilEmergencyRelation,
+      @NonNull TextInputLayout tilHotelAddress, @NonNull TextInputLayout tilHotelName,
+      @NonNull TextInputLayout tilName, @NonNull TextInputLayout tilPhone,
+      @NonNull TextInputLayout tilTripDays, @NonNull TextInputLayout tilTripPurpose) {
     this.rootView = rootView;
     this.btnCaptureFromCamera = btnCaptureFromCamera;
     this.btnRegister = btnRegister;
@@ -128,6 +135,7 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
     this.etHotelName = etHotelName;
     this.etName = etName;
     this.etPhone = etPhone;
+    this.etTripDays = etTripDays;
     this.etTripPurpose = etTripPurpose;
     this.ivProfilePhoto = ivProfilePhoto;
     this.progressBar = progressBar;
@@ -142,6 +150,7 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
     this.tilHotelName = tilHotelName;
     this.tilName = tilName;
     this.tilPhone = tilPhone;
+    this.tilTripDays = tilTripDays;
     this.tilTripPurpose = tilTripPurpose;
   }
 
@@ -238,6 +247,12 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etTripDays;
+      TextInputEditText etTripDays = ViewBindings.findChildViewById(rootView, id);
+      if (etTripDays == null) {
+        break missingId;
+      }
+
       id = R.id.etTripPurpose;
       TextInputEditText etTripPurpose = ViewBindings.findChildViewById(rootView, id);
       if (etTripPurpose == null) {
@@ -322,6 +337,12 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tilTripDays;
+      TextInputLayout tilTripDays = ViewBindings.findChildViewById(rootView, id);
+      if (tilTripDays == null) {
+        break missingId;
+      }
+
       id = R.id.tilTripPurpose;
       TextInputLayout tilTripPurpose = ViewBindings.findChildViewById(rootView, id);
       if (tilTripPurpose == null) {
@@ -330,10 +351,10 @@ public final class ActivityTouristRegistrationBinding implements ViewBinding {
 
       return new ActivityTouristRegistrationBinding((ScrollView) rootView, btnCaptureFromCamera,
           btnRegister, etDocNumber, etEmail, etEmergencyName, etEmergencyPhone, etEmergencyRelation,
-          etHotelAddress, etHotelName, etName, etPhone, etTripPurpose, ivProfilePhoto, progressBar,
-          spinnerDocType, spinnerNationality, tilDocNumber, tilEmail, tilEmergencyName,
+          etHotelAddress, etHotelName, etName, etPhone, etTripDays, etTripPurpose, ivProfilePhoto,
+          progressBar, spinnerDocType, spinnerNationality, tilDocNumber, tilEmail, tilEmergencyName,
           tilEmergencyPhone, tilEmergencyRelation, tilHotelAddress, tilHotelName, tilName, tilPhone,
-          tilTripPurpose);
+          tilTripDays, tilTripPurpose);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

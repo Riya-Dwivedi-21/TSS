@@ -21,14 +21,19 @@ public final class ActivityChoiceBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final MaterialButton btnLogin;
+
+  @NonNull
   public final MaterialButton btnNewUser;
 
   @NonNull
   public final TextView tvWelcome;
 
   private ActivityChoiceBinding(@NonNull ConstraintLayout rootView,
-      @NonNull MaterialButton btnNewUser, @NonNull TextView tvWelcome) {
+      @NonNull MaterialButton btnLogin, @NonNull MaterialButton btnNewUser,
+      @NonNull TextView tvWelcome) {
     this.rootView = rootView;
+    this.btnLogin = btnLogin;
     this.btnNewUser = btnNewUser;
     this.tvWelcome = tvWelcome;
   }
@@ -60,6 +65,12 @@ public final class ActivityChoiceBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnLogin;
+      MaterialButton btnLogin = ViewBindings.findChildViewById(rootView, id);
+      if (btnLogin == null) {
+        break missingId;
+      }
+
       id = R.id.btnNewUser;
       MaterialButton btnNewUser = ViewBindings.findChildViewById(rootView, id);
       if (btnNewUser == null) {
@@ -72,7 +83,8 @@ public final class ActivityChoiceBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityChoiceBinding((ConstraintLayout) rootView, btnNewUser, tvWelcome);
+      return new ActivityChoiceBinding((ConstraintLayout) rootView, btnLogin, btnNewUser,
+          tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

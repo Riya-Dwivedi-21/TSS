@@ -117,4 +117,26 @@
     <string name="hint_enter_hotel">Enter hotel name</string>
     <string name="hint_enter_address">Enter hotel address</string>
     <string name="hint_enter_purpose">Enter trip purpose</string>
+    
+    <!-- Additional strings for new features -->
+    <string name="trip_duration_days">Trip Duration (Days)</string>
+    <string name="sos_emergency">SOS EMERGENCY</string>
+    <string name="days_of_trip">Days of Trip</string>
+    <string name="safety_tips">Safety Tips</string>
+    <string name="registration_details">Registration Details</string>
+    <string name="trip_details">Trip Details</string>
+    <string name="days_traveled">Days Traveled</string>
+    <string name="days_remaining">Days Remaining</string>
+    <string name="total_duration">Total Duration</string>
+    <string name="adjust_trip_duration">Adjust Trip Duration:</string>
+    <string name="registration_date">Registration Date</string>
+    <string name="your_digital_tourist_id">Your Digital Tourist ID</string>
+    <string name="scan_qr_code_to_verify">Scan this QR code to verify your identity</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="select_preferred_language">Select your preferred language for the app interface</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="language_selection_coming_soon">Language selection feature will be available in the next update</string>
+    
+    <!-- API Keys - These should be replaced with actual keys in production -->
+    <string name="google_maps_api_key">AIzaSyBvOkBw3cL1nq4cL1nq4cL1nq4cL1nq4cL1nq4</string>
 </resources>

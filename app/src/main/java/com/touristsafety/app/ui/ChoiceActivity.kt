@@ -21,6 +21,12 @@ class ChoiceActivity : AppCompatActivity() {
 
 		binding.btnNewUser.setOnClickListener {
 			startActivity(Intent(this, TouristRegistrationActivity::class.java))
+			finish()
+		}
+
+		binding.btnLogin.setOnClickListener {
+			startActivity(Intent(this, LoginActivity::class.java))
+			finish()
 		}
 	}
 }

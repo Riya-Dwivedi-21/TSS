@@ -1,21 +1,22 @@
 package com.touristsafety.app.ui.viewmodel
 
+import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.touristsafety.app.data.model.Tourist
 import com.touristsafety.app.data.repository.TouristRepository
-import com.touristsafety.app.data.repository.TouristRepositoryImpl
+import com.touristsafety.app.data.repository.EncryptedTouristRepository
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.util.Date
 import kotlin.Result
 
-class TouristRegistrationViewModel : ViewModel() {
+class TouristRegistrationViewModel(private val context: Context) : ViewModel() {
     
-    private val repository: TouristRepository = TouristRepositoryImpl()
+    private val repository: TouristRepository = EncryptedTouristRepository(context)
     private val aadhaarVerifier: AadhaarVerifier = AadhaarVerifierImpl()
     
     private val _registrationState = MutableLiveData<RegistrationState>()
@@ -36,7 +37,8 @@ class TouristRegistrationViewModel : ViewModel() {
         nationality: String,
         hotelName: String,
         hotelAddress: String,
-        tripPurpose: String
+        tripPurpose: String,
+        tripDays: Int
     ) {
         if (!validateInputs(name, verificationType, verificationNumber, phoneNumber, email)) {
             _registrationState.value = RegistrationState.Error("Please fill all required fields correctly")
@@ -58,6 +60,7 @@ class TouristRegistrationViewModel : ViewModel() {
             hotelName = hotelName,
             hotelAddress = hotelAddress,
             tripPurpose = tripPurpose,
+            tripDays = tripDays,
             arrivalDate = Date()
         )
         

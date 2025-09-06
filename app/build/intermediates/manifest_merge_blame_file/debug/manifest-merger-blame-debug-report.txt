@@ -10,209 +10,329 @@
 10
 11    <!-- Permissions -->
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:6:5-67
-12-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:6:22-64
-13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:7:5-79
-13-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:7:22-76
-14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:8:5-81
-14-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:8:22-78
-15    <uses-permission android:name="android.permission.CAMERA" />
-15-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:9:5-65
-15-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:9:22-62
-16    <uses-permission android:name="android.permission.SEND_SMS" />
-16-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:10:5-67
-16-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:10:22-64
-17    <!-- For Android 13+ use READ_MEDIA_IMAGES, prior use READ_EXTERNAL_STORAGE -->
-18    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-18-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:12:5-76
-18-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:12:22-73
-19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:13:5-80
-19-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:13:22-77
-20
-21    <permission
-21-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-22        android:name="com.touristsafety.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-24
-25    <uses-permission android:name="com.touristsafety.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-26
-27    <application
-27-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:15:5-74:19
-28        android:allowBackup="true"
-28-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:16:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.12.0] C:\Users\micro\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:17:9-65
-31        android:debuggable="true"
-32        android:extractNativeLibs="false"
-33        android:fullBackupContent="@xml/backup_rules"
-33-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:18:9-54
-34        android:label="@string/app_name"
-34-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:19:9-41
-35        android:supportsRtl="true"
-35-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:20:9-35
-36        android:testOnly="true"
-37        android:theme="@style/Theme.TouristSafetySystem" >
-37-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:21:9-57
-38        <provider
-38-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:24:9-32:20
-39            android:name="androidx.core.content.FileProvider"
-39-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:25:13-62
-40            android:authorities="com.touristsafety.app.provider"
-40-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:26:13-65
-41            android:exported="false"
-41-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:27:13-37
-42            android:grantUriPermissions="true" >
-42-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:28:13-47
-43            <meta-data
-43-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:29:13-31:54
-44                android:name="android.support.FILE_PROVIDER_PATHS"
-44-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:30:17-67
-45                android:resource="@xml/file_paths" />
-45-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:31:17-51
-46        </provider>
-47
-48        <activity
-48-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:34:9-42:20
-49            android:name="com.touristsafety.app.ui.MainActivity"
-49-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:35:13-44
-50            android:exported="true"
-50-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:36:13-36
-51            android:theme="@style/Theme.TouristSafetySystem" >
-51-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:37:13-61
-52            <intent-filter>
-52-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:38:13-41:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:39:17-69
-53-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:39:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:40:17-77
-55-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:40:27-74
-56            </intent-filter>
-57        </activity>
-58        <activity
-58-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:44:9-47:64
-59            android:name="com.touristsafety.app.ui.LoginActivity"
-59-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:45:13-45
-60            android:exported="false"
-60-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:46:13-37
-61            android:theme="@style/Theme.TouristSafetySystem" />
-61-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:47:13-61
-62        <activity
-62-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:49:9-52:64
-63            android:name="com.touristsafety.app.ui.ChoiceActivity"
-63-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:50:13-46
-64            android:exported="false"
-64-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:51:13-37
-65            android:theme="@style/Theme.TouristSafetySystem" />
-65-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:52:13-61
-66        <activity
-66-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:54:9-57:64
-67            android:name="com.touristsafety.app.ui.TouristRegistrationActivity"
-67-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:55:13-59
-68            android:exported="false"
-68-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:56:13-37
-69            android:theme="@style/Theme.TouristSafetySystem" />
-69-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:57:13-61
-70        <activity
-70-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:59:9-62:64
-71            android:name="com.touristsafety.app.ui.QRCodeActivity"
-71-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:60:13-46
-72            android:exported="false"
-72-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:61:13-37
-73            android:theme="@style/Theme.TouristSafetySystem" />
-73-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:62:13-61
-74        <activity
-74-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:64:9-67:64
-75            android:name="com.touristsafety.app.ui.PasswordResetActivity"
-75-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:65:13-53
-76            android:exported="false"
-76-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:66:13-37
-77            android:theme="@style/Theme.TouristSafetySystem" />
-77-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:67:13-61
-78        <activity
-78-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:69:9-72:64
-79            android:name="com.touristsafety.app.ui.OtpVerificationActivity"
-79-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:70:13-55
-80            android:exported="false"
-80-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:71:13-37
-81            android:theme="@style/Theme.TouristSafetySystem" />
-81-->C:\Users\micro\AndroidStudioProjects\TSS\app\src\main\AndroidManifest.xml:72:13-61
-82
-83        <provider
-83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-84            android:name="androidx.startup.InitializationProvider"
-84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-85            android:authorities="com.touristsafety.app.androidx-startup"
-85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-86            android:exported="false" >
-86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-87            <meta-data
-87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-88                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-89                android:value="androidx.startup" />
-89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\micro\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-90            <meta-data
-90-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\micro\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-91                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-91-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\micro\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-92                android:value="androidx.startup" />
-92-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\micro\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-93            <meta-data
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-94                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-95                android:value="androidx.startup" />
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-96        </provider>
-97
-98        <receiver
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-99            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-100            android:directBootAware="false"
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-101            android:enabled="true"
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-102            android:exported="true"
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-103            android:permission="android.permission.DUMP" >
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-104            <intent-filter>
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-105                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-106            </intent-filter>
-107            <intent-filter>
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-108                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-109            </intent-filter>
-110            <intent-filter>
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-111                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-112            </intent-filter>
-113            <intent-filter>
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-114                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\micro\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-115            </intent-filter>
-116        </receiver>
-117    </application>
-118
-119</manifest>
+12-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:10:5-65
+16-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:10:22-62
+17
+18    <uses-feature
+18-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:11:5-85
+19        android:name="android.hardware.camera"
+19-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:11:19-57
+20        android:required="false" />
+20-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:11:58-82
+21
+22    <uses-permission android:name="android.permission.SEND_SMS" />
+22-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:12:5-67
+22-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:12:22-64
+23
+24    <uses-feature
+24-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:13:5-88
+25        android:name="android.hardware.telephony"
+25-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:13:19-60
+26        android:required="false" />
+26-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:13:61-85
+27
+28    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+28-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:14:5-75
+28-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:14:22-72
+29    <uses-permission android:name="android.permission.CALL_PHONE" />
+29-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:15:5-69
+29-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:15:22-66
+30    <!-- For Android 13+ use READ_MEDIA_IMAGES, prior use READ_EXTERNAL_STORAGE -->
+31    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+31-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:17:5-76
+31-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:17:22-73
+32    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+32-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:18:5-80
+32-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:18:22-77
+33    <uses-permission
+33-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:19:5-20:38
+34        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+34-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:19:22-78
+35        android:maxSdkVersion="28" />
+35-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:20:9-35
+36
+37    <uses-feature
+37-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+38        android:glEsVersion="0x00020000"
+38-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+39        android:required="true" />
+39-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+40
+41    <queries>
+41-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+42
+43        <!-- Needs to be explicitly declared on Android R+ -->
+44        <package android:name="com.google.android.apps.maps" />
+44-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+44-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+45    </queries>
+46
+47    <permission
+47-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+48        android:name="com.touristsafety.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.touristsafety.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:22:5-97:19
+54        android:name="com.touristsafety.app.TouristSafetyApplication"
+54-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:23:9-49
+55        android:allowBackup="true"
+55-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:24:9-35
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.12.0] C:\Users\riyad\.gradle\caches\transforms-3\4d13162283d09b9c9bedcbf64eea8d38\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+57        android:dataExtractionRules="@xml/data_extraction_rules"
+57-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:25:9-65
+58        android:debuggable="true"
+59        android:extractNativeLibs="false"
+60        android:fullBackupContent="@xml/backup_rules"
+60-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:26:9-54
+61        android:label="@string/app_name"
+61-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:27:9-41
+62        android:supportsRtl="true"
+62-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:28:9-35
+63        android:testOnly="true"
+64        android:theme="@style/Theme.TouristSafetySystem" >
+64-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:29:9-57
+65
+66        <!-- Google Maps API Key - Will be set dynamically from secure storage -->
+67        <meta-data
+67-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:33:9-35:59
+68            android:name="com.google.android.geo.API_KEY"
+68-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:34:13-58
+69            android:value="@string/google_maps_api_key" />
+69-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:35:13-56
+70
+71        <provider
+71-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:37:9-45:20
+72            android:name="androidx.core.content.FileProvider"
+72-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:38:13-62
+73            android:authorities="com.touristsafety.app.provider"
+73-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:39:13-65
+74            android:exported="false"
+74-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:40:13-37
+75            android:grantUriPermissions="true" >
+75-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:41:13-47
+76            <meta-data
+76-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:42:13-44:54
+77                android:name="android.support.FILE_PROVIDER_PATHS"
+77-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:43:17-67
+78                android:resource="@xml/file_paths" />
+78-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:44:17-51
+79        </provider>
+80
+81        <activity
+81-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:47:9-55:20
+82            android:name="com.touristsafety.app.ui.ChoiceActivity"
+82-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:48:13-46
+83            android:exported="true"
+83-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:49:13-36
+84            android:theme="@style/Theme.TouristSafetySystem" >
+84-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:50:13-61
+85            <intent-filter>
+85-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:51:13-54:29
+86                <action android:name="android.intent.action.MAIN" />
+86-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:52:17-69
+86-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:52:25-66
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+88-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:53:17-77
+88-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:53:27-74
+89            </intent-filter>
+90        </activity>
+91        <activity
+91-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:57:9-60:64
+92            android:name="com.touristsafety.app.ui.MainActivity"
+92-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:58:13-44
+93            android:exported="false"
+93-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:59:13-37
+94            android:theme="@style/Theme.TouristSafetySystem" />
+94-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:60:13-61
+95        <activity
+95-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:62:9-65:64
+96            android:name="com.touristsafety.app.ui.LoginActivity"
+96-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:63:13-45
+97            android:exported="false"
+97-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:64:13-37
+98            android:theme="@style/Theme.TouristSafetySystem" />
+98-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:65:13-61
+99        <activity
+99-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:67:9-70:64
+100            android:name="com.touristsafety.app.ui.TouristRegistrationActivity"
+100-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:68:13-59
+101            android:exported="false"
+101-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:69:13-37
+102            android:theme="@style/Theme.TouristSafetySystem" />
+102-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:70:13-61
+103        <activity
+103-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:72:9-75:64
+104            android:name="com.touristsafety.app.ui.QRCodeActivity"
+104-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:73:13-46
+105            android:exported="false"
+105-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:74:13-37
+106            android:theme="@style/Theme.TouristSafetySystem" />
+106-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:75:13-61
+107        <activity
+107-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:77:9-80:64
+108            android:name="com.touristsafety.app.ui.PasswordResetActivity"
+108-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:78:13-53
+109            android:exported="false"
+109-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:79:13-37
+110            android:theme="@style/Theme.TouristSafetySystem" />
+110-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:80:13-61
+111        <activity
+111-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:82:9-85:64
+112            android:name="com.touristsafety.app.ui.OtpVerificationActivity"
+112-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:83:13-55
+113            android:exported="false"
+113-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:84:13-37
+114            android:theme="@style/Theme.TouristSafetySystem" />
+114-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:85:13-61
+115        <activity
+115-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:87:9-90:64
+116            android:name="com.touristsafety.app.ui.SettingsActivity"
+116-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:88:13-48
+117            android:exported="false"
+117-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:89:13-37
+118            android:theme="@style/Theme.TouristSafetySystem" />
+118-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:90:13-61
+119        <activity
+119-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:92:9-95:64
+120            android:name="com.touristsafety.app.ui.SecuritySettingsActivity"
+120-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:93:13-56
+121            android:exported="false"
+121-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:94:13-37
+122            android:theme="@style/Theme.TouristSafetySystem" />
+122-->C:\Users\riyad\OneDrive\Documents\GitHub\TSS\app\src\main\AndroidManifest.xml:95:13-61
+123
+124        <!-- Needs to be explicitly declared on P+ -->
+125        <uses-library
+125-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+126            android:name="org.apache.http.legacy"
+126-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+127            android:required="false" />
+127-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\riyad\.gradle\caches\transforms-3\cf956196bbb6b85a65dfe95d92af8ba5\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+128
+129        <activity
+129-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\726c22da0d41715b8de054a28be4e576\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+130            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+130-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\726c22da0d41715b8de054a28be4e576\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\726c22da0d41715b8de054a28be4e576\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+132            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+132-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\726c22da0d41715b8de054a28be4e576\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+133
+134        <meta-data
+134-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\2bf952ddc5b3a38df5df32af030a0582\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+135            android:name="com.google.android.gms.version"
+135-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\2bf952ddc5b3a38df5df32af030a0582\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+136            android:value="@integer/google_play_services_version" />
+136-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\riyad\.gradle\caches\transforms-3\2bf952ddc5b3a38df5df32af030a0582\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+137
+138        <provider
+138-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+139            android:name="androidx.startup.InitializationProvider"
+139-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+140            android:authorities="com.touristsafety.app.androidx-startup"
+140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+141            android:exported="false" >
+141-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+142            <meta-data
+142-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+143                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+143-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+144                android:value="androidx.startup" />
+144-->[androidx.emoji2:emoji2:1.2.0] C:\Users\riyad\.gradle\caches\transforms-3\eac20c241bec76980d7580f654e3a177\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+145            <meta-data
+145-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\riyad\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+146                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+146-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\riyad\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+147                android:value="androidx.startup" />
+147-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\riyad\.gradle\caches\transforms-3\ef0bac44bc9232837c2b295ec3cdcda1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+148            <meta-data
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+149                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+150                android:value="androidx.startup" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+151        </provider>
+152
+153        <uses-library
+153-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+154            android:name="androidx.window.extensions"
+154-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+155            android:required="false" />
+155-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+156        <uses-library
+156-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+157            android:name="androidx.window.sidecar"
+157-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+158            android:required="false" />
+158-->[androidx.window:window:1.0.0] C:\Users\riyad\.gradle\caches\transforms-3\59ca34ce47d02cfd08d26038b040cd38\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+159
+160        <service
+160-->[androidx.room:room-runtime:2.6.1] C:\Users\riyad\.gradle\caches\transforms-3\d52a0011ac81b839fda42aacd5a9d512\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+161            android:name="androidx.room.MultiInstanceInvalidationService"
+161-->[androidx.room:room-runtime:2.6.1] C:\Users\riyad\.gradle\caches\transforms-3\d52a0011ac81b839fda42aacd5a9d512\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+162            android:directBootAware="true"
+162-->[androidx.room:room-runtime:2.6.1] C:\Users\riyad\.gradle\caches\transforms-3\d52a0011ac81b839fda42aacd5a9d512\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+163            android:exported="false" />
+163-->[androidx.room:room-runtime:2.6.1] C:\Users\riyad\.gradle\caches\transforms-3\d52a0011ac81b839fda42aacd5a9d512\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+164
+165        <receiver
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+166            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+167            android:directBootAware="false"
+167-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+168            android:enabled="true"
+168-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+169            android:exported="true"
+169-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+170            android:permission="android.permission.DUMP" >
+170-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+171            <intent-filter>
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+172                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+173            </intent-filter>
+174            <intent-filter>
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+175                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+176            </intent-filter>
+177            <intent-filter>
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+178                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+179            </intent-filter>
+180            <intent-filter>
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+181                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\riyad\.gradle\caches\transforms-3\c500148b3e7efc0ab1b8558eead52161\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+182            </intent-filter>
+183        </receiver>
+184    </application>
+185
+186</manifest>

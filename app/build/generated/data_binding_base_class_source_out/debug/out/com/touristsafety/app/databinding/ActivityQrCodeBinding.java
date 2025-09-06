@@ -22,6 +22,9 @@ public final class ActivityQrCodeBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
+  public final MaterialButton btnContinueToApp;
+
+  @NonNull
   public final MaterialButton btnDownload;
 
   @NonNull
@@ -45,12 +48,14 @@ public final class ActivityQrCodeBinding implements ViewBinding {
   @NonNull
   public final TextView tvTouristName;
 
-  private ActivityQrCodeBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnDownload,
+  private ActivityQrCodeBinding(@NonNull ScrollView rootView,
+      @NonNull MaterialButton btnContinueToApp, @NonNull MaterialButton btnDownload,
       @NonNull MaterialButton btnShare, @NonNull ImageView ivQRCode,
       @NonNull TextView tvEmergencyContact, @NonNull TextView tvNationality,
       @NonNull TextView tvSafetyScore, @NonNull TextView tvTouristId,
       @NonNull TextView tvTouristName) {
     this.rootView = rootView;
+    this.btnContinueToApp = btnContinueToApp;
     this.btnDownload = btnDownload;
     this.btnShare = btnShare;
     this.ivQRCode = ivQRCode;
@@ -88,6 +93,12 @@ public final class ActivityQrCodeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnContinueToApp;
+      MaterialButton btnContinueToApp = ViewBindings.findChildViewById(rootView, id);
+      if (btnContinueToApp == null) {
+        break missingId;
+      }
+
       id = R.id.btnDownload;
       MaterialButton btnDownload = ViewBindings.findChildViewById(rootView, id);
       if (btnDownload == null) {
@@ -136,8 +147,9 @@ public final class ActivityQrCodeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityQrCodeBinding((ScrollView) rootView, btnDownload, btnShare, ivQRCode,
-          tvEmergencyContact, tvNationality, tvSafetyScore, tvTouristId, tvTouristName);
+      return new ActivityQrCodeBinding((ScrollView) rootView, btnContinueToApp, btnDownload,
+          btnShare, ivQRCode, tvEmergencyContact, tvNationality, tvSafetyScore, tvTouristId,
+          tvTouristName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
