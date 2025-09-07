@@ -1,3 +1,5 @@
+// Temporarily disabled for compatibility
+/*
 package com.touristsafety.app.data.repository
 
 import android.content.Context
@@ -135,3 +137,4 @@ class TouristRepositoryImpl(private val context: Context) : TouristRepository {
         }
     }
 }
+*/

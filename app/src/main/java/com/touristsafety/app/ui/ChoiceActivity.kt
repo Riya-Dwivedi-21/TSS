@@ -1,3 +1,5 @@
+// Temporarily disabled for compatibility
+/*
 package com.touristsafety.app.ui
 
 import android.content.Intent
@@ -30,5 +32,6 @@ class ChoiceActivity : AppCompatActivity() {
 		}
 	}
 }
+*/
 
 

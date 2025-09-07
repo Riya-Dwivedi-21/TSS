@@ -3,9 +3,6 @@ package com.touristsafety.app.ui
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
-import com.touristsafety.app.R
 import com.touristsafety.app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -17,11 +14,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupBottomNavigation()
+        setupClickListeners()
     }
 
-    private fun setupBottomNavigation() {
-        val navController = findNavController(R.id.nav_host_fragment)
-        binding.bottomNavigation.setupWithNavController(navController)
+    private fun setupClickListeners() {
+        binding.btnLaunchComposeRegistration.setOnClickListener {
+            val intent = Intent(this, com.touristsafety.app.ui.compose.SimpleTSSRegistrationActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

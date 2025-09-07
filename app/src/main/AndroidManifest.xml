@@ -44,8 +44,9 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <!-- Set MainActivity as launcher to avoid referencing disabled activities -->
         <activity
-            android:name=".ui.ChoiceActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TouristSafetySystem">
             <intent-filter>
@@ -54,9 +55,11 @@
             </intent-filter>
         </activity>
 
+        <!-- Disabled or commented-out activities are removed to prevent runtime crashes -->
+        <!--
         <activity
-            android:name=".ui.MainActivity"
-            android:exported="false"
+            android:name=".ui.ChoiceActivity"
+            android:exported="true"
             android:theme="@style/Theme.TouristSafetySystem" />
 
         <activity
@@ -70,6 +73,12 @@
             android:theme="@style/Theme.TouristSafetySystem" />
 
         <activity
+            android:name=".ui.OtpVerificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TouristSafetySystem" />
+        -->
+
+        <activity
             android:name=".ui.QRCodeActivity"
             android:exported="false"
             android:theme="@style/Theme.TouristSafetySystem" />
@@ -80,17 +89,22 @@
             android:theme="@style/Theme.TouristSafetySystem" />
 
         <activity
-            android:name=".ui.OtpVerificationActivity"
-            android:exported="false"
-            android:theme="@style/Theme.TouristSafetySystem" />
-
-        <activity
             android:name=".ui.SettingsActivity"
             android:exported="false"
             android:theme="@style/Theme.TouristSafetySystem" />
 
         <activity
             android:name=".ui.SecuritySettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TouristSafetySystem" />
+
+        <activity
+            android:name=".ui.ComposeRegistrationLauncher"
+            android:exported="false"
+            android:theme="@style/Theme.TouristSafetySystem" />
+
+        <activity
+            android:name=".ui.compose.SimpleTSSRegistrationActivity"
             android:exported="false"
             android:theme="@style/Theme.TouristSafetySystem" />
 

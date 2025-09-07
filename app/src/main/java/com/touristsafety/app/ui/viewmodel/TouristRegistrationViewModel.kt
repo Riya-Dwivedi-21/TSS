@@ -1,3 +1,5 @@
+// Temporarily disabled for Kotlin compatibility
+/*
 package com.touristsafety.app.ui.viewmodel
 
 import android.content.Context
@@ -133,3 +135,4 @@ class AadhaarVerifierImpl : AadhaarVerifier {
         return if (aadhaarOk && nameOk) Result.success(true) else Result.success(false)
     }
 }
+*/
